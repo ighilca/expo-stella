@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import NewsletterForm from "@/components/NewsletterForm";
 
 export default function Home() {
   return (
@@ -7,7 +8,7 @@ export default function Home() {
       {/* Navigation */}
       <nav className="fixed w-full bg-white/80 backdrop-blur-sm z-50 py-2 shadow-sm">
         <div className="max-w-6xl mx-auto px-8 flex justify-between items-center">
-          <Image
+        <Image
             src="/images/logo.png"
             alt="Logo Résidence Stella"
             width={160}
@@ -62,7 +63,7 @@ export default function Home() {
         <div className="max-w-[1400px] mx-auto">
           <div className="grid md:grid-cols-12 gap-12 items-start">
             <div className="md:col-span-7 relative aspect-[3/4]">
-              <Image
+            <Image
                 src="/images/expo/P1040820-2-scaled.jpeg"
                 alt="Résidence Stella"
                 fill
@@ -116,6 +117,56 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Benefits Section */}
+      <section className="py-24 px-8 bg-gray-50">
+        <div className="max-w-[1400px] mx-auto">
+          <h2 className="text-5xl font-bodoni mb-16 text-center">Une plus-value pour nos résidents</h2>
+          <div className="grid md:grid-cols-3 gap-12">
+            {/* Culture */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg text-center">
+              <div className="w-20 h-20 bg-red-50 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-10 h-10 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bodoni mb-4">Enrichissement culturel</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Une exposition qui transforme nos espaces communs en galerie d'art, 
+                apportant la culture directement chez vous.
+              </p>
+            </div>
+
+            {/* Social */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg text-center">
+              <div className="w-20 h-20 bg-red-50 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-10 h-10 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bodoni mb-4">Rencontres enrichissantes</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Une occasion unique de partager des moments privilégiés avec 
+                l'artiste et les autres résidents passionnés d'art.
+              </p>
+            </div>
+
+            {/* Environment */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg text-center">
+              <div className="w-20 h-20 bg-red-50 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-10 h-10 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bodoni mb-4">Cadre de vie amélioré</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Des œuvres d'art qui embellissent votre environnement quotidien 
+                et créent une atmosphère inspirante.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Director's Message */}
       <section className="py-24 px-8 bg-gray-50">
         <div className="max-w-[1400px] mx-auto">
@@ -165,14 +216,14 @@ export default function Home() {
               <h3 className="text-5xl font-bodoni mb-6">Informations pratiques</h3>
               <div className="space-y-6">
                 <div className="bg-white p-6 rounded-xl">
-                  <h4 className="font-serif text-2xl mb-2">Accès</h4>
+                  <h4 className="font-bodoni text-2xl mb-2">Accès</h4>
                   <p className="text-gray-600">
                     L'exposition est accessible aux résidents et visiteurs.<br />
                     Située près du centre de santé, de la pharmacie et des autres services.
                   </p>
                 </div>
                 <div className="bg-white p-6 rounded-xl">
-                  <h4 className="font-serif text-2xl mb-2">Contact</h4>
+                  <h4 className="font-bodoni text-2xl mb-2">Contact</h4>
                   <p className="text-gray-600">
                     Pour toute information sur l'acquisition des œuvres :<br />
                     450 687-3300<br />
@@ -211,7 +262,7 @@ export default function Home() {
               </p>
               <Link 
                 href="https://residencescogir.com/residence-aine-laval/stella/"
-                target="_blank"
+          target="_blank"
                 className="inline-block bg-gray-50 p-8 rounded-xl hover:bg-gray-100 transition-colors w-full"
               >
                 <h4 className="font-bodoni text-2xl mb-3">Découvrir tous nos services</h4>
@@ -225,7 +276,7 @@ export default function Home() {
             </div>
             <div className="md:col-span-7 md:pl-8 flex items-center">
               <div className="aspect-[16/9] relative w-full">
-                <Image
+          <Image
                   src="/images/résidence.webp"
                   alt="Résidence Stella - Vue extérieure"
                   fill
@@ -243,7 +294,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-8">
           <div className="grid md:grid-cols-2 gap-12">
             <div>
-          <Image
+              <Image
                 src="/images/logo.png"
                 alt="Logo Résidence Stella"
                 width={160}
@@ -258,14 +309,33 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <h4 className="text-2xl font-serif mb-4">Exposition-bénéfice</h4>
+              <h4 className="text-2xl font-bodoni mb-4">Exposition-bénéfice</h4>
               <div className="text-gray-400 space-y-2">
                 <p>Vernissage : 30 mai 2024 à 14h00</p>
-                <p>Photographies de Jean Lafleur</p>
-                <p className="mt-4">
-                  Une partie des profits sera versée à un organisme de bienfaisance.
-                </p>
+                <p>Une partie des profits sera versée à un organisme de bienfaisance.</p>
               </div>
+            </div>
+          </div>
+
+          {/* Partners Logos */}
+          <div className="border-t border-gray-800 mt-12 pt-12 flex justify-center items-center gap-16">
+            <div className="h-12 relative">
+              <Image
+                src="/images/LOGO_COGIR_Residences_Noir_SansIcone-1.png"
+                alt="Logo Cogir Résidences"
+                width={200}
+                height={60}
+                className="w-auto h-full object-contain brightness-0 invert"
+              />
+            </div>
+            <div className="h-12 relative">
+              <Image
+                src="/images/logo-lafleur.png"
+                alt="Logo Jean Lafleur"
+                width={160}
+                height={60}
+                className="w-auto h-full object-contain brightness-0 invert"
+              />
             </div>
           </div>
 
