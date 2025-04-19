@@ -147,7 +147,7 @@ export default async function Gallery() {
             <div>
               <h4 className="text-xl font-bodoni mb-4">Exposition-bénéfice</h4>
               <div className="text-gray-400 space-y-2">
-                <p>Vernissage : 30 mai 2024 à 14h00</p>
+                <p>Vernissage : 30 mai 2025 à 14h00</p>
                 <p>Une partie des profits sera versée à un organisme de bienfaisance.</p>
               </div>
             </div>
@@ -176,7 +176,7 @@ export default async function Gallery() {
           </div>
 
           <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-            <p>© 2024 Résidence Stella - Tous droits réservés</p>
+            <p>© 2025 Résidence Stella - Tous droits réservés</p>
           </div>
         </div>
       </footer>

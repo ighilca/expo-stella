@@ -34,7 +34,7 @@ export default function Home() {
             </h2>
             <div className="bg-gray-50 p-8 rounded-xl mb-12">
               <p className="text-2xl mb-3">Vernissage</p>
-              <p className="text-3xl font-bodoni mb-4">30 mai 2024 à 14h00</p>
+              <p className="text-3xl font-bodoni mb-4">30 mai 2025 à 14h00</p>
               <p className="text-gray-600 text-lg">Résidence Stella, Laval</p>
             </div>
             <p className="text-xl text-gray-600 leading-relaxed">
@@ -311,7 +311,7 @@ export default function Home() {
             <div>
               <h4 className="text-2xl font-bodoni mb-4">Exposition-bénéfice</h4>
               <div className="text-gray-400 space-y-2">
-                <p>Vernissage : 30 mai 2024 à 14h00</p>
+                <p>Vernissage : 30 mai 2025 à 14h00</p>
                 <p>Une partie des profits sera versée à un organisme de bienfaisance.</p>
               </div>
             </div>
@@ -340,7 +340,7 @@ export default function Home() {
           </div>
 
           <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-            <p>© 2024 Résidence Stella - Tous droits réservés</p>
+            <p>© 2025 Résidence Stella - Tous droits réservés</p>
           </div>
         </div>
       </footer>
