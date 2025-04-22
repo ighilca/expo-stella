@@ -11,9 +11,9 @@ export default function Home() {
         <Image
             src="/images/logo.png"
             alt="Logo Résidence Stella"
-            width={160}
-            height={80}
-            className="w-auto h-16"
+            width={180}
+            height={90}
+            className="w-auto h-20"
           />
           <Link
             href="/gallery"
@@ -30,7 +30,7 @@ export default function Home() {
           <div className="md:col-span-5 md:sticky md:top-32">
             <span className="text-red-500 font-medium mb-8 block text-lg">Exposition-bénéfice</span>
             <h2 className="text-8xl font-bodoni mb-12">
-              Galerie<br/>d'Art
+              La Galerie<br/>des Arts
             </h2>
             <div className="bg-gray-50 p-8 rounded-xl mb-12">
               <p className="text-2xl mb-3">Vernissage</p>
@@ -75,7 +75,7 @@ export default function Home() {
               <h3 className="text-5xl font-bodoni mb-8">L'exposition</h3>
               <p className="text-gray-600 mb-8 text-lg leading-relaxed">
                 Découvrez une collection exceptionnelle de photographies dans le corridor principal 
-                de la Résidence Stella, transformé en espace d'exposition. Les œuvres créent 
+                de la Résidence Stella, transformé en "Galerie des Arts". Les œuvres créent 
                 une expérience immersive unique.
               </p>
               <div className="space-y-8">
@@ -183,9 +183,9 @@ export default function Home() {
                 soutenant une noble cause."
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Notre corridor principal se transforme en un espace d'exposition 
-                exceptionnel, permettant à nos résidents et visiteurs de découvrir les œuvres 
-                remarquables de Jean Lafleur dans un cadre unique et accessible.
+                Notre corridor principal se transforme en une "Galerie des Arts", un espace 
+                d'exposition exceptionnel, permettant à nos résidents / résidentes et visiteurs de 
+                découvrir les œuvres remarquables de Jean Lafleur dans un cadre unique et accessible.
               </p>
             </div>
             <div className="md:col-span-7">
@@ -200,7 +200,7 @@ export default function Home() {
                 </div>
                 <div className="absolute -bottom-8 -right-8 bg-white p-8 rounded-xl shadow-lg max-w-[80%]">
                   <p className="font-bodoni text-2xl mb-2">Anne-Julie Nadon</p>
-                  <p className="text-gray-600 text-lg">Directrice générale</p>
+                  <p className="text-gray-600 text-lg">Directrice générale, Résidence Stella</p>
                 </div>
               </div>
             </div>
@@ -225,9 +225,8 @@ export default function Home() {
                 <div className="bg-white p-6 rounded-xl">
                   <h4 className="font-bodoni text-2xl mb-2">Contact</h4>
                   <p className="text-gray-600">
-                    Pour toute information sur l'acquisition des œuvres :<br />
-                    450 687-3300<br />
-                    locationstella@cogir.net
+                    Pour toute information sur l'acquisition des œuvres, écrire à:<br />
+                    photoslafleur@gmail.com
                   </p>
                 </div>
               </div>
@@ -304,8 +303,7 @@ export default function Home() {
               <div className="text-gray-400 space-y-2">
                 <p>3300, boul. le Carrefour</p>
                 <p>Laval, Québec, H7T 0A1</p>
-                <p>450 687-3300</p>
-                <p>locationstella@cogir.net</p>
+                <p>photoslafleur@gmail.com</p>
               </div>
             </div>
             <div>
@@ -329,7 +327,7 @@ export default function Home() {
               />
             </div>
             <div className="h-12 relative">
-              <Image
+          <Image
                 src="/images/logo-lafleur.png"
                 alt="Logo Jean Lafleur"
                 width={160}
@@ -337,6 +335,10 @@ export default function Home() {
                 className="w-auto h-full object-contain brightness-0 invert"
               />
             </div>
+          </div>
+
+          <div className="mt-8 text-center text-gray-400">
+            <p>Pour voir toutes les oeuvres de Jean Lafleur visiter le site: <a href="http://jlafeur.net" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-300">jlafeur.net</a></p>
           </div>
 
           <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">

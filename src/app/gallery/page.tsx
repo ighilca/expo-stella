@@ -119,10 +119,8 @@ export default async function Gallery() {
           <p className="text-xl text-gray-600 mb-8">
             Contactez-nous pour plus d'informations sur les œuvres exposées et leur acquisition.
           </p>
-          <div className="inline-flex items-center space-x-4 text-lg">
-            <span className="text-gray-600">450 687-3300</span>
-            <span className="text-gray-300">|</span>
-            <span className="text-gray-600">locationstella@cogir.net</span>
+          <div className="inline-flex items-center text-lg">
+            <span className="text-gray-600">photoslafleur@gmail.com</span>
           </div>
         </div>
       </section>
@@ -142,6 +140,7 @@ export default async function Gallery() {
               <div className="text-gray-400 space-y-2">
                 <p>3300, boul. le Carrefour</p>
                 <p>Laval, Québec, H7T 0A1</p>
+                <p>photoslafleur@gmail.com</p>
               </div>
             </div>
             <div>
@@ -173,6 +172,10 @@ export default async function Gallery() {
                 className="w-auto h-full object-contain brightness-0 invert"
               />
             </div>
+          </div>
+
+          <div className="mt-8 text-center text-gray-400">
+            <p>Pour voir toutes les oeuvres de Jean Lafleur visiter le site: <a href="http://jlafeur.net" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-300">jlafeur.net</a></p>
           </div>
 
           <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
